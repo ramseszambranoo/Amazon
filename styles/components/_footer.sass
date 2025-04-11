@@ -4,12 +4,14 @@
 .footer
     width: 100%
     height: 100%
+    background-color: #232F3E
     &__identificar
         display: flex
         justify-content: center
         align-items: center
         flex-direction: column
         width: 100%
+        background-color: white
         &__linea
             margin: 40px 0px 30px 0px
             width: 100%
@@ -49,6 +51,7 @@
         height: 50px
         width: 100%
         @include mixin.flex-box()
+        margin-bottom: 20px
         &:hover
             background-color: #485769
         a
@@ -63,14 +66,15 @@
         height: 350px
         width: 100%
         background-color: #232F3E
+        display: flex
+        padding: 0px 0px 20px 0px
         @include mixin.flex-box()
         &__contenedores
-            background-color: blue
             height: 100%
-            width: 60%
+            width: 1000px
             display: flex
             flex-direction: row
-            gap: 50px
+            gap: 100px
             &__contenedor1
                 height: 100%
                 width: 106px
@@ -78,9 +82,9 @@
                 flex-direction: column
                 justify-content: center
                 align-items: center
-                background-color: green
+                
                 &__textos
-                    background-color: red
+                    
                     height: 100%
                     width: 100%
                     margin: 10px 0px
@@ -95,15 +99,18 @@
                         height: 16px
                         width: 85px
                         color: white
-                        font-size: 18px
+                        font-size: 16px
                         margin-bottom: 15px
                     ul
                         list-style: none
                         li
-                            font-size: 15px
+                            font-size: 14px
                             margin-bottom: 10px
                             a
-                                color: white
+                                text-decoration: none
+                                color: #ECEAE9
+                                &:hover
+                                    text-decoration: underline
             &__contenedor2
                 height: 100%
                 width: 215px
@@ -113,9 +120,9 @@
                 justify-content: center
                 align-items: center
                 padding: 0px
-                background-color: green
+                
                 &__textos
-                    background-color: red
+                    
                     height: 100%
                     width: 100%
                     margin: 10px 0px
@@ -131,16 +138,322 @@
                         height: 16px
                         width: 205px
                         color: white
-                        font-size: 18px
-                    
+                        font-size: 16px
                     ul
                         list-style: none
                         li
-                            font-size: 15px
+                            font-size: 14px
                             margin-bottom: 10px
                             a
-                                color: white
+                                text-decoration: none
+                                color: #ECEAE9
+                                &:hover
+                                    text-decoration: underline
+            &__contenedor3
+                height: 100%
+                width: 248px
+                display: flex
+                flex-direction: column
+                top: 0
+                justify-content: center
+                align-items: center
+                padding: 0px
+                
+                &__textos
+                    
+                    height: 100%
+                    width: 100%
+                    margin: 10px 0px
+                    display: flex
+                    justify-content: flex-start
+                    align-items: flex-start
+                    flex-direction: column
+                    h6
+                        margin-bottom: 15px
+                        display: flex
+                        justify-content: flex-start
+                        align-items: flex-start
+                        height: 16px
+                        width: 100%
+                        color: white
+                        font-size: 16px
+                    ul
+                        list-style: none
+                        li
+                            font-size: 14px
+                            margin-bottom: 10px
+                            a
+                                text-decoration: none
+                                color: #ECEAE9
+                                &:hover
+                                    text-decoration: underline
+            &__contenedor4
+                height: 100%
+                width: 162px
+                display: flex
+                flex-direction: column
+                top: 0
+                justify-content: center
+                align-items: center
+                padding: 0px
+                
+                &__textos
+                    
+                    height: 100%
+                    width: 100%
+                    margin: 10px 0px
+                    display: flex
+                    justify-content: flex-start
+                    align-items: flex-start
+                    flex-direction: column
+                    h6
+                        margin-bottom: 15px
+                        display: flex
+                        justify-content: flex-start
+                        align-items: flex-start
+                        height: 16px
+                        width: 100%
+                        color: white
+                        font-size: 16px
+                    ul
+                        list-style: none
+                        li
+                            font-size: 14px
+                            margin-bottom: 10px
+                            a
+                                text-decoration: none
+                                color: #ECEAE9
+                                &:hover
+                                    text-decoration: underline
+
+    &__linea2
+        height: 1px
+        width: 100%
+        background-color: #3A4553
+        margin-bottom: 20px
+        
+
+    &__opciones
+        margin-bottom: 20px
+        
+        height: 68px
+        width: 100%
+        display: flex
+        justify-content: center
+        gap: 20px
+        align-items: center
+        &__imagen
+            margin-right: 0
+            display: flex
+            height: 100px
+            margin-right: 50px
+        &__cajas
+            cursor: pointer
+            width: 503px
+            height: 35px
+            display: flex
+            justify-content: space-evenly
+            align-items: center
+            gap: 10px
+            &__caja1
+                outline: 1px solid #C8D4B5
+                border-radius: 3px 
+                height: 36px
+                width: 117px
+                display: flex   
+                justify-content: space-evenly
+                align-items: center
+                
+                &__imagen1
+                    height: 22px
+                p
+                    color: #C8D4B5
+                &__imagen2
+                    height: 15px
+            &__caja2
+                outline: 1px solid #C8D4B5
+                border-radius: 3px 
+                height: 36px
+                width: 215px
+                display: flex   
+                justify-content: space-evenly
+                align-items: center
+                
+                span
+                    color: white
+                    font-size: 20px
+                    
+                    margin-bottom: 1px
+                p
+                    color: #C8D4B5
+                    font-size: 15px
+
+            &__caja3
+                outline: 1px solid #C8D4B5
+                border-radius: 3px 
+                height: 36px
+                width: 152px
+                display: flex   
+                justify-content: space-evenly
+                align-items: center
+                
+                img
+                    height: 20px
+                p
+                    color: #C8D4B5
+    &__sections
+        display: flex
+        justify-content: center
+        align-items: center
+        width: 100%
+        height: 432px
+        background-color: #131A22
+        &__secciones
+            height: 400px
+            width: 1000px
             
+            &__lista
+                display: flex
+                justify-content: space-evenly
+                align-items: flex-start
+                height: 60px
+                width: 100%
+                
+                margin-bottom: 20px
+                ul
+                    display: flex
+                    list-style: none
+                    gap: 29px
+                    li
+                        top: 0
+                        display: flex
+                        justify-content: center
+                        align-items: flex-start
+                        flex-direction: column
+                        height: 100%
+                        width: 143px
+                        
+                        &:hover
+                            text-decoration: underline white
+                            cursor: pointer
+                        p
+                            font-size: 12px
+                            color: #ECEAE9
+                            &:hover
+                                text-decoration: underline white
+                        span
+                            font-size: 12px
+                            color: #999AAA
+                            &:hover
+                                text-decoration: underline #999AAA
+            &__lista2
+                display: flex
+                justify-content: space-evenly
+                align-items: flex-start
+                height: 60px
+                width: 100%
+                
+                margin-top: 40px
+                ul
+                    display: flex
+                    list-style: none
+                    gap: 29px
+                    li
+                        top: 0
+                        display: flex
+                        justify-content: center
+                        align-items: flex-start
+                        flex-direction: column
+                        height: 100%
+                        width: 143px
+                        
+                        &:hover
+                            text-decoration: underline white
+                            cursor: pointer
+                        p
+                            font-size: 12px
+                            color: #ECEAE9
+                            &:hover
+                                text-decoration: underline white
+                        span
+                            font-size: 12px
+                            color: #999AAA
+                            &:hover
+                                text-decoration: underline #999AAA
+            &__lista3
+                display: flex
+                justify-content: space-evenly
+                align-items: flex-start
+                height: 60px
+                width: 100%
+                
+                margin-top: 0
+                ul
+                    display: flex
+                    list-style: none
+                    gap: 29px
+                    li
+                        top: 0
+                        display: flex
+                        justify-content: center
+                        align-items: flex-start
+                        flex-direction: column
+                        height: 100%
+                        width: 143px
+                        
+                        margin-top: 20px
+                        &:hover
+                            text-decoration: underline white
+                            cursor: pointer
+                        p
+                            font-size: 12px
+                            color: #ECEAE9
+                            &:hover
+                                text-decoration: underline white
+                        span
+                            font-size: 12px
+                            color: #999AAA
+                            &:hover
+                                text-decoration: underline #999AAA
+
+    &__final
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        height: 100px
+        width: 100%
+        background-color: #131A22
+        
+        ul
+            display: flex
+            gap: 20px
+            list-style: none
+            justify-content: center
+            align-items: center
+            width: 100%
+            font-size: 12px
+            
+            height: 18px
+            li
+                a
+                    color: #DDDDDE
+                    text-decoration: none
+                    &:hover
+                        text-decoration: underline
+        span
+            display: flex
+            justify-content: center
+            align-items: center
+            font-size: 13px 
+            color: #DDDDDE
+                
+
+
+
+        
+        
+
 
             
 

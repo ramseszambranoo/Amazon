@@ -176,13 +176,14 @@
 #barra
     display: none
 
-#barra:checked ~ .nav_2 .nav-2__menu
+#barra:checked ~ .nav-2 .nav-2__menu
     transform: translateX(0)
     label
         transform: translateX(0)
         display: flex
-#barra:checked ~ .nav-2__overlay
+#barra:checked ~ .nav-2 .nav-2__overlay
     display: block
 
-#barra:checked ~ .main
-    //overflow: hidden
+
+#barra:checked ~ body
+    overflow-y: hidden
