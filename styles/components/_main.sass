@@ -1,0 +1,21 @@
+@use "_variables"
+
+.main
+    background-color: variables.$color-main
+    height: auto
+    background-image: linear-gradient(to bottom, transparent, transparent,variables.$color-main,variables.$color-main,variables.$color-main,variables.$color-main,), url('./images/FONDO-MAIN.jpg')
+    background-repeat: no-repeat
+    background-position: center top
+    background-size: 1500px
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+    
+    gap: 20px
+    padding: 250px 80px 40px 80px
+    div
+        width: 350px
+        height: 400px
+        background-color: white
+    h3
+        font-family: variables.$font-light

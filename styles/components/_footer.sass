@@ -1,0 +1,147 @@
+@use '_mixin'
+@use '_variables'
+
+.footer
+    width: 100%
+    height: 100%
+    &__identificar
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        width: 100%
+        &__linea
+            margin: 40px 0px 30px 0px
+            width: 100%
+            height: 1px
+            background-color: #E3E6E6
+    h2
+        font-size: 25px
+        font-family: variables.$font-bold
+    h3
+        @include mixin.flex-box()
+        margin-top: 10px
+        font-size: 15px
+        height: 30px
+        width: 287px
+        background-color: #FFD814
+        color: black
+        border-radius: 50px
+        padding: 18px 0px
+        font-size: 13px
+        &:hover
+            background-color: #dfbc0f
+            cursor: pointer
+    section
+        margin-top: 5px
+        font-size: 12px
+        p
+            font-weight: bold
+            color: black 
+            a
+                color: blue
+                &:hover
+                    color: #0C3390
+                    cursor: pointer
+
+    &__inicio
+        background-color: #37475A
+        height: 50px
+        width: 100%
+        @include mixin.flex-box()
+        &:hover
+            background-color: #485769
+        a
+            text-decoration: none
+            color: white
+            font-size: 13px
+            height: 50px
+            width: 100%
+            @include mixin.flex-box()
+
+    &__divisiones
+        height: 350px
+        width: 100%
+        background-color: #232F3E
+        @include mixin.flex-box()
+        &__contenedores
+            background-color: blue
+            height: 100%
+            width: 60%
+            display: flex
+            flex-direction: row
+            gap: 50px
+            &__contenedor1
+                height: 100%
+                width: 106px
+                display: flex
+                flex-direction: column
+                justify-content: center
+                align-items: center
+                background-color: green
+                &__textos
+                    background-color: red
+                    height: 100%
+                    width: 100%
+                    margin: 10px 0px
+                    display: flex
+                    justify-content: flex-start
+                    align-items: flex-start
+                    flex-direction: column
+                    h6
+                        display: flex
+                        justify-content: flex-start
+                        align-items: flex-start
+                        height: 16px
+                        width: 85px
+                        color: white
+                        font-size: 18px
+                        margin-bottom: 15px
+                    ul
+                        list-style: none
+                        li
+                            font-size: 15px
+                            margin-bottom: 10px
+                            a
+                                color: white
+            &__contenedor2
+                height: 100%
+                width: 215px
+                display: flex
+                flex-direction: column
+                top: 0
+                justify-content: center
+                align-items: center
+                padding: 0px
+                background-color: green
+                &__textos
+                    background-color: red
+                    height: 100%
+                    width: 100%
+                    margin: 10px 0px
+                    display: flex
+                    justify-content: flex-start
+                    align-items: flex-start
+                    flex-direction: column
+                    h6
+                        margin-bottom: 15px
+                        display: flex
+                        justify-content: flex-start
+                        align-items: flex-start
+                        height: 16px
+                        width: 205px
+                        color: white
+                        font-size: 18px
+                    
+                    ul
+                        list-style: none
+                        li
+                            font-size: 15px
+                            margin-bottom: 10px
+                            a
+                                color: white
+            
+
+            
+
+        

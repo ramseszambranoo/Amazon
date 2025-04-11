@@ -1,0 +1,188 @@
+@use "_variables"
+@use "_general"
+@use "_mixin"
+
+
+
+.nav-2
+    height: 39px
+    width: 100%
+    background-color: variables.$colornav2
+    &__contenedor
+        margin-left: 20px
+        height: 39px
+        display: flex
+        justify-content: flex-start
+        align-items: center
+        &__label
+            label
+                display: flex
+                justify-content: center
+                align-items: center
+                height: 39px
+                padding: 0px 5px
+                &:hover
+                    @include mixin.hover-border()
+                img
+                    width: 23px
+                p
+                    font-size: 15px
+                    color: white
+                    font-family: variables.$font-bold
+        .opciones
+            display: flex
+            align-items: center
+            justify-content: center
+            margin: 10px
+            height: 39px
+            padding: 5px
+            p
+                color: white
+                font-size: 14px
+            &:hover
+                @include mixin.hover-border()
+
+
+    &__menu
+        position: absolute
+        z-index: 5
+        top: 0
+        left: 0
+        width: 365px
+        height: 100vh
+        background-color: white
+        transform: translateX(-390px)
+        transition: transform 0.3s ease-in-out
+        section
+            position: relative
+            background-color: #232F3E
+            height: 50px
+            align-items: center
+            justify-content: flex-start
+            display: flex
+            flex-direction: row
+            gap: 10px
+        img
+            width: 27px
+            margin-left: 35px 
+        h3
+            font-family: variables.$font-bold
+            font-size: 20px
+            color: white
+        label
+            transform: translateX(-450px)
+            display: none
+            border-radius: 5px
+            outline-color: white solid 
+            position: absolute
+            display: flex
+            align-items: center
+            justify-content: center
+            right: -50px
+            top: 5px
+            img
+                width: 38px
+                background-color: transparent
+                border-radius: 5px
+                margin: 5px
+                padding: 5px
+                border: 1px solid black
+                outline: 1px solid white
+                cursor: pointer
+        &__list
+            height: 100%
+            overflow-y: scroll
+            overflow-x: hidden
+            margin-top: 0px
+            ul
+                display: flex
+                list-style: none
+                flex-direction: column
+                li
+                    font-size: 15px
+                    height: 44px
+                    display: flex
+                    flex-direction: row
+                    cursor: pointer
+                    align-items: center
+                    justify-content: space-between
+                    padding: 10px 25px 10px 30px 
+                    &:hover
+                        background-color: variables.$color-hover-list
+                h3
+                    margin-left: 30px
+                    font-size: 19px
+                    color: black
+                    margin-top: 15px
+                    margin-bottom: 10px
+                img
+                    color: black
+                    width: 15px
+        &__ver
+            font-size: 15px
+            height: 44px
+            display: flex
+            flex-direction: row
+            cursor: pointer
+            align-items: center
+            justify-content: flex-start
+            padding: 10px 30px 10px 30px
+            &:hover
+                background-color: variables.$color-hover-list
+            img
+                width: 15px
+                margin-left: 10px
+        &__linea
+            margin-top: 5px
+            margin-bottom: 5px
+            width: 100%
+            height: 0.5px
+            background-color: #D5DBDB
+        &__ayuda
+            margin-bottom: 100px
+            ul
+                display: flex
+                list-style: none
+                li
+                    gap: 5px
+                    display: flex
+                    justify-content: flex-start
+                    font-size: 15px
+                    height: 44px
+                    cursor: pointer
+                    &:hover
+                        background-color: variables.$color-hover-list
+                    img
+                        margin-left: 0
+                        width: 17px
+                        justify-content: flex-start
+                        left: 0
+                h3
+                    margin-left: 30px
+                    font-size: 19px
+                    color: black
+                    margin-top: 15px
+                    margin-bottom: 10px
+    &__overlay
+        width: 100%
+        height: 100%
+        position: absolute
+        top: 0
+        left: 0
+        background-color: rgba(0, 0, 0, 0.8)
+        z-index: 4
+        display: none
+
+#barra
+    display: none
+
+#barra:checked ~ .nav_2 .nav-2__menu
+    transform: translateX(0)
+    label
+        transform: translateX(0)
+        display: flex
+#barra:checked ~ .nav-2__overlay
+    display: block
+
+#barra:checked ~ .main
+    //overflow: hidden

@@ -1,15 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header class="nav">
-        hola
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Amazon.com en espanol. Gasta menos, Sonrie mas</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="icon" href="styles/images/Amazon_icon.png" />
+  </head>
+  <body>
+    <!-- NAV PRINCIPAL  -->
+    <header id="inicio" class="nav">
+      
+        <!--LADO IZQUIERDO-->
+        <div class="nav__izquierda">
+            <div class="nav__izquierda__logo">
+                <img src="styles/images/LOGO-AMAZON.png" alt="amazon.png">
+
+            </div>
+            <div class="nav__izquierda__envios">
+                <img src="styles/images/UBICACION-ICON.png" alt="ubicacion.png">
+                <div>
+                    <p>Enviar a</p>
+                    <h5>Venezuela</h5>
+                </div>
+            </div>
+            </div>
+
+            <!--LADO CENTRO-->
+        <div class="nav__centro">
+            <div class="nav__centro__busqueda">
+                <label class="nav__centro__busqueda__label" for="opciones" placeholder="Todo"></label>
+                <select class="nav__centro__busqueda__select" name="elige" id="elige" placeholder="Todo" class="selecciona1">
+                <option value="opciones" selected disabled hidden>Todos</option>
+                <option value="">Todos los departamentos</option>
+                <option value="">Arte y artesanias</option>
+                <option value="">Automotriz</option>
+                <option value="">Bebe</option>
+                <option value="">Belleza y cuidado personal</option>
+                <option value="">Cine y TV</option>
+                <option value="">Computadoras</option>
+                <option value="">Deportes y actividades al aire libre</option>
+                <option value="">Electronicos</option>
+                <option value="">Equipaje</option>
+                <option value="">Herramientas y mejoramiento del hogar</option>
+                <option value="">Hogar y cocina</option>
+                <option value="">Industrial y cientifico</option>
+                <option value="">Insumos para mascotas</option>
+                <option value="">Juguetes y juegos</option>
+                <option value="">Libros</option>
+                <option value="">Moda de niñas</option>
+                <option value="">Moda de niños</option>
+                <option value="">Moda para Hombre</option>
+                <option value="">Moda para Mujer</option>
+                <option value="">Musica MP3</option>
+                <option value="">Musica, CD y vinilos</option>
+                <option value="">Ofertas</option>
+                <option value="">Prime Video</option>
+                <option value="">Salud y productos para el hogar</option>
+                <option value="">Software</option>
+                <option value="">Tienda Kindle</option>
+                <option value="">videojuegos</option>
+                </select>
+            </div>
+            <div class="nav__centro__barra">
+                <input class="input" type="text" placeholder="Buscar en Amazon">
+
+            </div>
+
+            <div class="nav__centro__lupa">
+                <img src="styles/images/lupa.png" alt="lupa">
+
+            </div>
+
+
+        </div>
+
+        <div class="nav__derecha">
+            <div class="nav__derecha__idioma">
+                <img src="styles/images/US-ICON.png" alt="us.png">
+                <h5>ES</h5>
+            </div>
+            <div class="nav__derecha__cuentas">
+                <p>Hola, Identifícate</p>
+                <h5>Cuentas y Listas</h5>
+            </div>
+            <div class="nav__derecha__devoluciones">
+                <p>Devoluciones</p>
+                <h5>y Pedidos</h5>
+            </div>
+            <div class="nav__derecha__carrito">
+                <div class="nav__derecha__carrito__imagen">
+                    <img src="styles/images/CARRITO-ICON.png" alt="carrito.png">
+                    <span>0</span>
+                    <h5>Carrito</h5>
+                </div>
+                
+
+            </div>
+
+        </div>
+
+            
+
+        
+        
+        
     </header>
     
-</body>
+    <input type="checkbox" name="barra" id="barra"/>
+
+    <!-- SUB NAV -->
+    <nav class="nav-2">
+
+        
+
+<div class="nav-2__contenedor">
+
+    <div class="nav-2__contenedor__label">
+        <label class="nav-2__label" for="barra">
+            <img src="styles/images/3LINES-ICON.png" alt="">
+            <p>Todo</p>
+        </label>
+    </div>
+
+    <div class="opciones">
+        <p>Ofertas del Dia</p>
+    </div>
+
+    <div class="opciones">
+      <p>Prime Video</p>
+    </div>
+
+    <div class="opciones">
+        <p>Listas</p>
+    </div>
+
+    <div class="opciones">
+        <p>Servicio al Cliente</p>
+    </div>
+
+    <div class="opciones">
+        <p>Tarjetas de Regalo</p>
+    </div>
+
+    <div class="opciones">
+        <p>Vender</p>
+    </div>
+</div>
+
+      <aside class="nav-2__menu">
+        <section>
+          <img src="styles/images/ICON-USER.png" alt="" />
+          <h3>Hola, Identifícate</h3>
+          <label for="barra">
+            <img src="styles/images/ICON-X.png" alt="x-checkbox" />
+          </label>
+        </section>
+
+        <!-- LISTA DE MENU -->
+
+        <div class="nav-2__menu__list">
+          <ul>
+            <h3>Contenido y dispositivos digitales</h3>
+            <li>
+              Prime Video
+              <img src="styles/images/FLECHA-DERECHA.png" alt="" />
+            </li>
+            <li>
+              Amazon music
+              <img src="styles/images/FLECHA-DERECHA.png" alt="" />
+            </li>
+            <li>
+              E readers Kindle y Libros
+              <img src="styles/images/FLECHA-DERECHA.png" alt="" />
+            </li>
+            <li>
+              Appstore de Amazon
+              <img src="styles/images/FLECHA-DERECHA.png" alt="" />
+            </li>
+          </ul>
+          <div class="nav-2__menu__linea"></div>
+
+          <!-- LISTA DE MENU 2-->
+          <ul>
+            <h3>Buscar por departamentos</h3>
+            <li>
+              Electrónicos
+              <img src="styles/images/FLECHA-DERECHA.png" alt="" />
+            </li>
+            <li>
+              Computadoras
+              <img src="styles/images/FLECHA-DERECHA.png" alt="" />
+            </li>
+            <li>
+              Smart Home
+              <img src="styles/images/FLECHA-DERECHA.png" alt="" />
+            </li>
+            <li>
+              Arte y artesanías
+              <img src="styles/images/FLECHA-DERECHA.png" alt="" />
+            </li>
+          </ul>
+          <!--VER MAS-->
+          <li class="nav-2__menu__ver">
+            Ver todo
+            <img src="styles/images/FLECHA-ABAJO.png" alt="flecha-abajo.png" />
+            <!--LINEA DIVISORA -->
+          </li>
+          <div class="nav-2__menu__linea"></div>
+          <!--LISTA DE MENU 3-->
+          <ul>
+            <h3>Programas y funcionalidades</h3>
+            <li>
+              Tarjetas de regalo
+              <img src="styles/images/FLECHA-DERECHA.png" alt="" />
+            </li>
+            <li>
+              Comprar por interes
+              <img src="styles/images/FLECHA-DERECHA.png" alt="" />
+            </li>
+            <li>
+              Amazon live
+              <img src="styles/images/FLECHA-DERECHA.png" alt="" />
+            </li>
+            <li>
+              Tienda internacional
+              <img src="styles/images/FLECHA-DERECHA.png" alt="" />
+            </li>
+          </ul>
+          <!--VER MAS-->
+          <li class="nav-2__menu__ver">
+            Ver todo
+            <img src="styles/images/FLECHA-ABAJO.png" alt="flecha-abajo.png" />
+            <!--LINEA DIVISORA -->
+          </li>
+          <div class="nav-2__menu__linea"></div>
+          <!--LISTA DE MENU 4- informacion -->
+          <div class="nav-2__menu__ayuda">
+            <ul>
+              <h3>Ayuda y configuración</h3>
+              <li>Tu cuenta</li>
+              <li>
+                <img src="styles/images/WEB-ICON.png" alt="icon.png" />Español
+              </li>
+              <li>
+                <img src="styles/images/US-ICON.png" alt="" />Estados Unidos
+              </li>
+              <li>Servicio al cliente</li>
+              <li>Identificate</li>
+            </ul>
+          </div>
+
+          <!--LISTA DE MENU 4- informacion -->
+        </div>
+      </aside>
+
+      <label for="barra" class="nav-2__overlay"></label>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL-->
+    <main class="main">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </main>
+
+    <footer class="footer">
+      <!--IDENTIFICAR-->
+      <div class="footer__identificar">
+
+        <div class="footer__identificar__linea"></div>
+        <h2>Ver recomendaciones personalizadas</h2>
+        <h3 class="footer__identificar__identificate">Identifícate</h3>
+
+        <section class="footer__identificar__ingresar">
+          <p>¿Eres un cliente nuevo?
+            <a href="#">Empieza aqui.</a>
+          </p>
+          
+        </section>
+      <div class="footer__identificar__linea"></div>
+
+      </div>
+      <!-- ir a inicio-->
+        <div class="footer__inicio">
+          <a href="#inicio">Inicio de Página</a>
+        </div>
+
+        <div class="footer__divisiones">
+          <div class="footer__divisiones__contenedores">
+            <!--CONTENEDOR 1--> 
+            <div class="footer__divisiones__contenedores__contenedor1">
+              <div class="footer__divisiones__contenedores__contenedor1__textos">
+                <h6>Conócenos</h6>
+                <ul>
+                  <li><a href="#">Trabaja en Amazon</a></li>
+                  <li><a href="#">Blog</a></li>
+                  <li><a href="#">Acerca de Amazon</a></li>
+                  <li><a href="#">Relaciones con los Inversionistas</a></li>
+                  <li><a href="#">Dispositivos Amazon</a></li>
+                  <li><a href="#">Amazon Science</a></li>
+                </ul>
+
+              </div>
+
+            </div>
+
+            <!--CONTENEDOR 2-->
+
+            <div class="footer__divisiones__contenedores__contenedor2">
+              <div class="footer__divisiones__contenedores__contenedor2__textos">
+                <h6>Gana Dinero con Nosotros</h6>
+                <ul>
+                  <li><a href="#">Vender productos en Amazon</a></li>
+                  <li><a href="#">Vende en Amazon Business</a></li>
+                  <li><a href="#">Vender aplicaciones en Amazon</a></li>
+                  <li><a href="#">Programa de Afiliados</a></li>
+                  <li><a href="#">Anuncia tus Productos</a></li>
+                  <li><a href="#">Publica tu Libro en Kindle</a></li>
+                  <li><a href="#">Habilita un Amazon Hub</a></li>
+                  <li><a href="#">›Ver más Gana Dinero con Nosotros</a></li>
+                </ul>
+
+              </div>
+
+            </div>
+
+
+
+          </div>
+
+
+        </div>
+    </footer>
+  </body>
 </html>
